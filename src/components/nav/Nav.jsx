@@ -3,7 +3,7 @@ import './nav.css';
 import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 import { BsBook } from 'react-icons/bs';
-import { RiServiceLine } from 'react-icons/ri';
+
 import { MdOutlineContactPhone } from 'react-icons/md';
 import { useState } from 'react';
 
@@ -35,21 +35,14 @@ const Nav = () => {
         className={activeNav === '#experince' ? 'active' : ''}
       >
         <BsBook />
-      </a>
-      {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a
-        href="#services"
-        onClick={() => setActiveNav('#service')}
-        className={activeNav === '#services' ? 'active' : ''}
-      >
-        <RiServiceLine />
+  
       </a>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a
         href="#contact"
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}
-      >
+              >
         <MdOutlineContactPhone />
       </a>
     </nav>
