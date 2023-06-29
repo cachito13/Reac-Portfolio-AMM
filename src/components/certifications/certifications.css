@@ -1,3 +1,27 @@
+.client__avatar {
+    position: relative;
+  }
+  
+  .client__avatar img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .client__avatar.expanded img {
+    transform: scale(2.5); /* Aumenta el tamaño de la imagen al 120% */
+
+  }
+  .client__avatar {
+    position: relative;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
 .container.testimonials__container{
     width: 40%;
     padding-bottom: 4rem;
@@ -8,8 +32,6 @@
 .client__avatar{
     width: 300px;
     aspect-ratio: 1/1;
-   
-   
     margin: 0 auto;
     
 }
@@ -41,8 +63,14 @@
  }
   }
  
-  /*======================MEDIA QUERIES (MEDIUM DEVICES)=======================*/
+  /*======================MEDIA QUERIES (small DEVICES)=======================*/
   @media screen and (max-width:600px){
+    .client__avatar{
+        width: 250px;
+        aspect-ratio: 1/1;
+        margin: 0 auto;
+        
+    }
 .container.testimonials__container{
     width: var(--container-width-sm);
 }
