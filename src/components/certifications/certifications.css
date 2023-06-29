@@ -30,6 +30,9 @@
 }
 
 .client__avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     aspect-ratio: 1/1;
     margin: 0 auto;
@@ -66,10 +69,7 @@
   /*======================MEDIA QUERIES (small DEVICES)=======================*/
   @media screen and (max-width:600px){
     .client__avatar{
-        width: 250px;
-        aspect-ratio: 1/1;
-        margin: 0 auto;
-        
+       max-width: 220px;
     }
 .container.testimonials__container{
     width: var(--container-width-sm);
